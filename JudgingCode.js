@@ -1,46 +1,47 @@
-var indno = 0;
-var Criteria = ["Workability", "Sustainability and Maintainability", "Usability", "Innovation", "Presentation"];
+var Criteria = ["Workability", "Sustainability", "Usability", "Innovation", "Presentation"];
 var Discription = ["meets the objectives well and runs without error or bugs","governance, community, portability, supportability, changeability, evolvability and interoperability",
 "understandability, buildability, installability, learnability & documentation","works in an imaginative way characterized by a high degree of innovation, and divergent thinkin",
 "Posture, gestures, eye contact, and use of the voice"]
-function first(){
-    document.getElementById("Criteria").innerHTML="ITCode Fair Judgetable";
-    document.getElementById("Discription").innerHTML="Enter first Team Name to begin";
-    document.getElementById("Score").style.visibility="hidden";
-    document.getElementById("Submit").innerHTML="Start";
-    document.getElementById("Next").style.visibility="hidden";
+class JudgeCriteria{
+    constructor(Judgename,Teamname,JudgeCriteria,Score){
+        this.Judgename = Judgename;
+        this.Teamname = Teamname;
+        this.JudgeCriteria = JudgeCriteria;
+        this.Score = Score;
+}
+}
 
-    
-}
-function fn1(){
-    document.getElementById("TeamName").style.visibility="hidden";
-    document.getElementById("Criteria").innerHTML=Criteria[indno]
-    document.getElementById("Discription").innerHTML=Discription[indno];
-    document.getElementById("Submit").innerHTML="Submit"
-    document.getElementById("Score").style.visibility="visible";
-    
-}
-function fn2(){
-    //document.getElementById("Score").value save value
-    document.getElementById("Score").value="";
-    if (indno <= 3){
-        indno += 1;
-        fn1()
+function Validate(){
+    var tName= document.getElementById("TeamName").value;
+    var work= document.getElementById("Workability").value;
+    var sustain= document.getElementById("Sustainability");
+    var usable= document.getElementById("Usability");
+    var innovate= document.getElementById("Innovation");
+    var present= document.getElementById("Presentation");
+    var reg = new RegExp('^[0-9]$');
+    if(document.getElementById("TeamName").value==""){
+        document.getElementById("TeamName").style.border="solid 3px red"; 
     }
     else {
-        document.getElementById("Criteria").innerHTML="Task Complete";
-        document.getElementById("Discription").innerHTML="Enter New Team Name";
-        document.getElementById("TeamName").style.visibility="Visible";
-        document.getElementById("Score").style.visibility="hidden";
-        document.getElementById("Submit").style.visibility="hidden";
-        document.getElementById("Next").style.visibility="visible";
+        document.getElementById("TeamName").style.border="solid 3px blue";
+    }
+    for(var i=0; Criteria.length;i++){
+        
+        if(reg.test(document.getElementById(Criteria[i]).value-1)==false){
+            document.getElementById(Criteria[i]).style.border="solid 3px red";
+        }
+        else{
+            document.getElementById(Criteria[i]).style.border="solid 3px blue";
+        }
     }
 }
-function fn3(){
-    //send score to database
-    document.getElementById("Score").style.visibility="visible";
-    document.getElementById("Submit").style.visibility="visible";
-    document.getElementById("Next").style.visibility="hidden";
-    indno=0;
-    fn1(); 
+function Unameval(){
+    if(document.getElementById("UserName").value==""){
+        document.getElementById("UserName").style.border="solid 3px red";
+        document.getElementById("Uname").style.visibility="visible";
+
+    }
+    else{
+        window.location.href = "Form.html";
+    }
 }
