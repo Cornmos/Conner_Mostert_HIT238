@@ -1,8 +1,4 @@
 var Criteria = ["Workability", "Sustainability", "Usability", "Innovation", "Presentation"];
-var Discription = ["meets the objectives well and runs without error or bugs","governance, community, portability, supportability, changeability, evolvability and interoperability",
-"understandability, buildability, installability, learnability & documentation","works in an imaginative way characterized by a high degree of innovation, and divergent thinkin",
-"Posture, gestures, eye contact, and use of the voice"];
-
 function Unameval(){
     if(document.getElementById("UserName").value==""){
         document.getElementById("UserName").style.border="solid 3px red";
