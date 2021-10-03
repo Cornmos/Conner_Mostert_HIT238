@@ -1,2 +1,0 @@
-{"Username":"Conner","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Conner","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
