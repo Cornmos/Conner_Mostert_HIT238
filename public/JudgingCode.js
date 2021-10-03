@@ -18,6 +18,7 @@ function Validate(){
     var present= document.getElementById("Presentation").value;
     var reg = new RegExp('^[0-9]$');
     counter=0;
+    //teamname validate
     if(document.getElementById("TeamName").value==""){
         document.getElementById("TeamName").style.border="solid 3px red";
         counter++;
@@ -25,6 +26,7 @@ function Validate(){
     else {
         document.getElementById("TeamName").style.border="solid 3px blue";
     }
+    //Entered values validate
     for(var i=0; Criteria.length;i++){
         if(i==Criteria.length){
             break;
@@ -39,39 +41,45 @@ function Validate(){
         }
     }
     console.log(counter)
+    // counter = 0 if validation passes
     if(counter==0){
-        add2Array(tName,work,sustain,usable,innovate,present)
+        //here the post request to server
+            const data = {
+                Username: sessionStorage.getItem("UserName"),
+                Teamname: tName,
+                Worability: work,
+                Sustainability: sustain,
+                Usability:usable,
+                Innovation: innovate,
+                Presentation:present
+            };
+            const options = {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+              };  
+            
+            for(var i=0; Criteria.length;i++){ //Clear previos selections
+                if(i==Criteria.length){
+                    break;
+                }
+                document.getElementById(Criteria[i]).value="";
+                document.getElementById("TeamName").value="";
+            }
+            return options //the request to be sent
+        }}
+        
+        
+    async function asyncCall() {
+        const result = await Validate();
+        const response = await fetch('/api', result); //Sends the request
+        const json = await response.json();
+        window.location.href = "FormComplete.html";//Load next page
+        console.log(json);
     }
-}
-function add2Array(tName,work,sustain,usable,innovate,present){
-    var formVal = {
-        Username: sessionStorage.getItem("UserName"),
-        Teamname: tName,
-        Worability: work,
-        Sustainability: sustain,
-        Usability:usable,
-        Innovation: innovate,
-        Presentation:present
-    };
-    localStorage.setItem(document.getElementById("TeamName").value,JSON.stringify(formVal));
-    for(var i=0; Criteria.length;i++){
-        if(i==Criteria.length){
-            break;
-        }
-        document.getElementById(Criteria[i]).value="";
-        document.getElementById("TeamName").value="";
-    }
-    window.location.href = "FormComplete.html";
-    for (var i = 0; i < localStorage.length; i++){
-        console.log(localStorage.getItem(localStorage.key(i)));
-    }
-}
 function finish(){
-    //Values are Passed via JSON to Hosting Service Database to be added later
-    localStorage.clear()
     window.location.href = "index.html";
-    console.log("Data saved to database")
-
-
 
 }
