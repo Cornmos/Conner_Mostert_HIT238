@@ -1,0 +1,23 @@
+{
+  "name": "nodeservercode",
+  "version": "1.0.0",
+  "description": "Server side code for application",
+  "main": "Index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cornmos/Conner_Mostert_HIT238.git"
+  },
+  "author": "Conner Mostert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cornmos/Conner_Mostert_HIT238/issues"
+  },
+  "homepage": "https://github.com/Cornmos/Conner_Mostert_HIT238#readme"
+}
