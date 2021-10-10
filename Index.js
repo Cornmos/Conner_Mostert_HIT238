@@ -7,6 +7,6 @@ app.use(express.static('public'));
 app.use(express.json());
 app.post('/api',(request,response)=>{console.log(request.body);
 console.log("working");
-fs.appendFileSync('database.json',JSON.stringify(request.body)+",\n");
+fs.appendFileSync('database.json',",\n"+JSON.stringify(request.body));
 response.json(request.body)
 });
