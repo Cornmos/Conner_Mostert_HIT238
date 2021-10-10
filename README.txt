@@ -1,4 +1,5 @@
 #Hosted on https://connermosterthit238.glitch.me/
+View Code : https://glitch.com/edit/#!/connermosterthit238?path=Index.js%3A1%3A0 (Note: Open this link first to activate the service, then you can visit the site)
 
 # Conner_Mostert_HIT238
 Application design for HIT238
