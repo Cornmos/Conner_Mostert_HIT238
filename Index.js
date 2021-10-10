@@ -2,7 +2,9 @@
 const express = require("express");
 fs = require('fs');
 const app= express();
-app.listen(3000, () => console.log("listening on port 3000"));
+const port =process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`listening on port ${port}`));
 app.use(express.static('public'));
 app.use(express.json());
 app.post('/api',(request,response)=>{console.log(request.body);
