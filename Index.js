@@ -22,6 +22,6 @@ else {console.log("Failed to log in")
 app.post('/api',(request,response)=>{
 console.log(request.body);
 console.log("working");
-fs.appendFileSync('database.txt',JSON.stringify(request.body)+",\n");
+fs.appendFileSync('database.json',",\n"+JSON.stringify(request.body));
 response.json(request.body)
 });

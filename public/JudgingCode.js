@@ -7,10 +7,6 @@ function Unameval(){
         document.getElementById("Uname").style.visibility="visible";
     }
     else{
-<<<<<<< Updated upstream
-        sessionStorage.setItem("UserName",document.getElementById("UserName").value);
-        window.location.href = "Form.html";
-=======
         sessionStorage.setItem("UserName",Username); 
         //save in session storage to use on a different page without loosing variable
         const option = {
@@ -21,7 +17,6 @@ function Unameval(){
             body: JSON.stringify(jUsername)
           };
         return option
->>>>>>> Stashed changes
     }
 }
 function Validate(){
@@ -60,7 +55,7 @@ function Validate(){
     if(counter==0){
         //here the post request to server
             const data = {
-                Username: sessionStorage.getItem("UserName"),
+                Username: sessionStorage.getItem("UserName"), // Get username from Session storage
                 Teamname: tName,
                 Worability: work,
                 Sustainability: sustain,

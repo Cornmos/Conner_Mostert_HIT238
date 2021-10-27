@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="JudgingCode.js" type="text/javascript"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="Images/Favicon.ico"></link>
+	<link rel="stylesheet" type="text/css" href="Images/style.css"></link>
 </head>
-<body>
-    <h3>Enter team name</h3>
-    <input id="TeamName" type="text"/><br>
+<body class="center-line">
+    <h2>Enter team name</h2>
+    <input id="TeamName" type="text" style="width: 80%;height:30px ;"/><br>
     <h3>Workability</h3>
     <p>Meets the objectives well and runs without error or bugs</p>
-    <input id="Workability" type="number" min="1" max="10" step="1"/>
+    <input id="Workability" type="number" style="width: 15%;height:30px ;" min="1" max="10" step="1"/>
     <h3>Sustainability and Maintainability</h3>
     <p>Governance, community, portability, supportability, changeability, evolvability and interoperability</p>
-    <input id="Sustainability" type="number" min="1" max="10" step="1"/>
+    <input id="Sustainability" type="number" style="width: 15%;height:30px ;" min="1" max="10" step="1"/>
     <h3>Usability</h3>
-    <p>Understandability, buildability, installability, learnability & documentation</p>
-    <input id="Usability" type="number" min="1" max="10" step="1"/>
+    <p>Understandability, buildability, installability, learnability and documentation</p>
+    <input id="Usability" type="number" style="width: 15%;height:30px ;" min="1" max="10" step="1"/>
     <h3>Innovation</h3>
     <p>Works in an imaginative way characterized by a high degree of innovation, and divergent thinkin</p>
-    <input id="Innovation" type="number" min="1" max="10" step="1"/>
+    <input id="Innovation" type="number" style="width: 15%;height:30px ;" min="1" max="10" step="1"/>
     <h3>Presentation</h3>
     <p>Posture, gestures, eye contact, and use of the voice</p>
-    <input id="Presentation" type="number" min="1" max="10" step="1"/><br>
-    <button type="submit" id="Submit" onclick="asyncCall()">Submit</button>
+    <input id="Presentation" type="number" style="width: 15%;height:30px ;" min="1" max="10" step="1"/><br></br>
+    <button class="button" type="submit" id="Submit" onclick="asyncCall()">Submit</button>
 
 </body>
 </html>
