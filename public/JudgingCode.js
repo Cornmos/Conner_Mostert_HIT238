@@ -1,14 +1,23 @@
 //Client Code
 var Criteria = ["Workability", "Sustainability", "Usability", "Innovation", "Presentation"];
 function Unameval(){
-    if(document.getElementById("UserName").value==""){
+    const Username= document.getElementById("UserName").value;
+    const jUsername = [{"Username": Username}]
+    if(Username==""){
         document.getElementById("UserName").style.border="solid 3px red";
         document.getElementById("Uname").style.visibility="visible";
     }
     else{
-        sessionStorage.setItem("UserName",document.getElementById("UserName").value); 
+        sessionStorage.setItem("UserName",Username); 
         //save in session storage to use on a different page without loosing variable
-        window.location.href = "Form.html";
+        const option = {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(jUsername)
+          };
+        return option
     }
 }
 function Validate(){
@@ -74,20 +83,18 @@ function Validate(){
         }}
         
         
-    async function asyncCall() {
-        const result = await Validate();
-        const response = await fetch('/api', result); //Sends the request
-        const json = await response.json();
-        window.location.href = "FormComplete.html";//Load next page
-        console.log(json);
+async function asyncCall() {
+    const result = await Validate();
+    const response = await fetch('/api', result); //Sends the request
+    const json = await response.json();
+    window.location.href = "FormComplete.html";//Load next page
+    console.log(json);
     }
+
 function finish(){
     window.location.href = "index.html";
 
 }
-<<<<<<< Updated upstream
-=======
-
 async function UnameCheck(){//Check if username in server Database
     const Uname = await Unameval();
     const Unameresponse = await fetch('/Uname', Uname);//Packet sent to Server
@@ -103,4 +110,4 @@ async function UnameCheck(){//Check if username in server Database
     console.log("Responce from Server: "+ValidateUser.Status);
 }
 
->>>>>>> Stashed changes
+
