@@ -1,5 +1,4 @@
-[
-{"Username":"Conner","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
+[{"Username":"Conner","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
 {"Username":"Conner","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
 {"Username":"Conner","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
 {"Username":"Conner","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
@@ -22,4 +21,8 @@
 {"Username":"Jeff","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
 {"Username":"Jeff","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
 {"Username":"Jeff","Teamname":"Teamname","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
+<<<<<<< Updated upstream
 {"Username":"Jeff","Teamname":"team2","Worability":"1","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"1"}]
+=======
+{"Username":"James","Teamname":"terry","Worability":"9","Sustainability":"9","Usability":"9","Innovation":"9","Presentation":"9"}
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+//Client Code
 var Criteria = ["Workability", "Sustainability", "Usability", "Innovation", "Presentation"];
 function Unameval(){
     if(document.getElementById("UserName").value==""){
@@ -84,3 +85,22 @@ function finish(){
     window.location.href = "index.html";
 
 }
+<<<<<<< Updated upstream
+=======
+
+async function UnameCheck(){//Check if username in server Database
+    const Uname = await Unameval();
+    const Unameresponse = await fetch('/Uname', Uname);//Packet sent to Server
+    const ValidateUser= await Unameresponse.json()
+    if (ValidateUser.Status=="Pass"){ //Responce from server if pass or fail
+        window.location.href = 'Form.html';
+        console.log("Success Login")
+    }
+    else{
+        console.log("Failed to Login");
+        document.getElementById("UserName").style.border="solid 3px red";
+    };
+    console.log("Responce from Server: "+ValidateUser.Status);
+}
+
+>>>>>>> Stashed changes
