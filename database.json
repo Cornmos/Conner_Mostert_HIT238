@@ -1,24 +1,542 @@
-[{"Username":"Conner","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Conner","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Conner","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Conner","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
-{"Username":"Conner","Teamname":"Teamname","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Conner","Teamname":"team2","Worability":"1","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"1"},
-{"Username":"Bert","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Bert","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Bert","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Bert","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
-{"Username":"Bert","Teamname":"Teamname","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Bert","Teamname":"team2","Worability":"1","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"1"},
-{"Username":"Craig","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Craig","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Craig","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Craig","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
-{"Username":"Craig","Teamname":"Teamname","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Craig","Teamname":"team2","Worability":"1","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"1"},
-{"Username":"Jeff","Teamname":"team","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Jeff","Teamname":"Jer","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Jeff","Teamname":"f","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-{"Username":"Jeff","Teamname":"hert","Worability":"1","Sustainability":"1","Usability":"1","Innovation":"1","Presentation":"1"},
-{"Username":"Jeff","Teamname":"Teamname","Worability":"5","Sustainability":"5","Usability":"5","Innovation":"5","Presentation":"5"},
-
+[
+    {
+        "Username": "Conner",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "conner",
+        "Teamname": "testteam1",
+        "Worability": "5",
+        "Sustainability": "8",
+        "Usability": "9",
+        "Innovation": "8",
+        "Presentation": "7"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Bert",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Craig",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "team",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "Jer",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "f",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "hert",
+        "Worability": "1",
+        "Sustainability": "1",
+        "Usability": "1",
+        "Innovation": "1",
+        "Presentation": "1"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "Teamname",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Jeff",
+        "Teamname": "team2",
+        "Worability": "1",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "1"
+    },
+    {
+        "Username": "conner",
+        "Teamname": "testteam1",
+        "Worability": "5",
+        "Sustainability": "8",
+        "Usability": "9",
+        "Innovation": "8",
+        "Presentation": "7"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Hitert",
+        "Worability": "7",
+        "Sustainability": "7",
+        "Usability": "7",
+        "Innovation": "7",
+        "Presentation": "7"
+    },
+    {
+        "Username": "helra",
+        "Teamname": "pterte",
+        "Worability": "9",
+        "Sustainability": "9",
+        "Usability": "9",
+        "Innovation": "9",
+        "Presentation": "9"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "James",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "help",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "thisisit",
+        "Worability": "5",
+        "Sustainability": "5",
+        "Usability": "5",
+        "Innovation": "5",
+        "Presentation": "5"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "therealteam",
+        "Worability": "6",
+        "Sustainability": "6",
+        "Usability": "6",
+        "Innovation": "6",
+        "Presentation": "6"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "peopleteam",
+        "Worability": "8",
+        "Sustainability": "8",
+        "Usability": "8",
+        "Innovation": "8",
+        "Presentation": "8"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "GaleTeam",
+        "Worability": "7",
+        "Sustainability": "5",
+        "Usability": "7",
+        "Innovation": "5",
+        "Presentation": "7"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "Conner",
+        "Worability": "9",
+        "Sustainability": "9",
+        "Usability": "9",
+        "Innovation": "9",
+        "Presentation": "9"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "theBTeam",
+        "Worability": "6",
+        "Sustainability": "6",
+        "Usability": "6",
+        "Innovation": "6",
+        "Presentation": "6"
+    },
+    {
+        "Username": "Conner",
+        "Teamname": "helpmeteam",
+        "Worability": "2",
+        "Sustainability": "2",
+        "Usability": "2",
+        "Innovation": "2",
+        "Presentation": "2"
+    }
+]
