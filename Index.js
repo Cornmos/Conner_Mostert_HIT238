@@ -3,7 +3,7 @@ const express = require("express");
 fs = require('fs');
 const app= express();
 const port =process.env.PORT || 3000;
-const Usernames= ["Conner","James","Fred"]
+const Usernames= ["Conner","James","Fred"] //Server database of Users
 app.listen(port, () => console.log(`listening on port ${port}`));
 app.use(express.static('public'));
 app.use(express.json());
